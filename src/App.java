@@ -1,3 +1,6 @@
+import models.Bank;
+import models.Opcions;
+
 /**
  * * requeriments:
  * ? 1.-create account bank (checking account, savings account) 
@@ -21,7 +24,8 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Bank sol = new Bank("Banco sol");
+         new Opcions().createUser();
     }
 }
 
