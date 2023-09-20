@@ -1,5 +1,7 @@
 package models;
 
+import models.account.AccountTypes;
+
 public class User {
 
     private String userName;
@@ -14,9 +16,7 @@ public class User {
         this.totalBalance = totalBalance;
     }
 
-    public Boolean validate(String password){
-        return this.userPassword.equals(password);
-    }
+
 
     public String getUserName() {
         return userName;

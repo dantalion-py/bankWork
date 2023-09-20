@@ -1,9 +1,9 @@
 import models.Bank;
-import models.Opcions;
+
 
 /**
  * * requeriments:
- * ? 1.-create account bank (checking account, savings account) 
+ * ? 1.-create account bank (checking account, savings account, c2000 account) 
  * :
  *      ? checking account:
  *        * withdrawal
@@ -25,7 +25,8 @@ import models.Opcions;
 public class App {
     public static void main(String[] args) throws Exception {
         Bank sol = new Bank("Banco sol");
-         new Opcions().createUser();
+        sol.menuBank();
+
     }
 }
 
